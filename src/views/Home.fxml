@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.HomeController">
+   <left>
+      <AnchorPane prefHeight="600.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="profileBtn" layoutX="24.0" layoutY="83.0" mnemonicParsing="false" onAction="#profileBtnOnAction" text="Profile" />
+            <Button fx:id="homeBtn" layoutX="25.0" layoutY="14.0" mnemonicParsing="false" onAction="#homeBtnOnAction" text="Home" />
+            <Button fx:id="logOutBtn" layoutX="20.0" layoutY="560.0" mnemonicParsing="false" onAction="#logOutBtnOnAction" text="Log Out" />
+            <Button fx:id="followingBtn" layoutX="15.0" layoutY="50.0" mnemonicParsing="false" onAction="#followingBtnOnAction" text="Following" />
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane fx:id="mainContent" prefHeight="800.0" prefWidth="950.0" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>
